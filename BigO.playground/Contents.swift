@@ -58,6 +58,24 @@ printAllPaires(boxes)
 
 
 
+func printAllNumbersThanPrintSumofAllPairs(_ data: [Int]) {
+
+  data.forEach { number1 in
+    print(number1)
+  }
+
+  data.forEach { number1 in
+    data.forEach { number2 in
+      print("Sum of pairs is \(number1 + number2)")
+    }
+  }
+}
+
+
+printAllNumbersThanPrintSumofAllPairs(boxes)
+// O(n + nˆ2) = O(nˆ2)
+
+
 //Logarithmic Time complexity
 //Mark:- O(log n) example
 var j = 1
